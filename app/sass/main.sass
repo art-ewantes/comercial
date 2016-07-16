@@ -1,0 +1,103 @@
+@import "bourbon/app/assets/stylesheets/bourbon"
+*
+	margin: 0
+	padding: 0
+
+$main_color: #604b6c
+$orange: #fdb111
+
+=animation-delay($animation)
+	-webkit-animation-delay: $animation
+	-o-animation-delay: $animation
+	-moz-animation-delay: $animation
+	animation-delay: $animation
+
+=border-radius($border-radius)
+	-webkit-border-radius: $border-radius
+	-o-border-radius: $border-radius
+	-moz-border-radius: $border-radius
+	border-radius: $border-radius
+
+=placeholder ($placeholder) 
+	-webkit-input-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-moz-placeholder: $placeholder
+	-ms-input-placeholder: $placeholder
+
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-transition: $transition
+	-o-transition: $transition
+	transition: $transition
+
+body
+	font-family: "OpenSans", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #52a028
+	outline: none
+	border: 1px solid #52a028
+body input:required:valid,
+body textarea:required:valid
+	// color: #52a028
+	outline: none
+	border: 1px solid #52a028
+
+
+h2, h3, h4, h5
+	
+
+h2
+	font-size: em(24px)
+
+h1
+	font-size: em(25px)
+
+h3
+	font-size: em(18px)
+
+p
+	font-family: "OpenSans"
+
+h1
+	font-family: "OpenCondBold"
+
+
+.hidden
+	display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media.sass"

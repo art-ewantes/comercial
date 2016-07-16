@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "OpenSans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #52a028;
+  outline: none;
+  border: 1px solid #52a028; }
+
+body input:required:valid,
+body textarea:required:valid {
+  outline: none;
+  border: 1px solid #52a028; }
+
+h2 {
+  font-size: 1.5em; }
+
+h1 {
+  font-size: 1.5625em; }
+
+h3 {
+  font-size: 1.125em; }
+
+p {
+  font-family: "OpenSans"; }
+
+h1 {
+  font-family: "OpenCondBold"; }
+
+.hidden {
+  display: none; }

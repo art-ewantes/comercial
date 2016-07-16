@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "BitterRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BitterRegular/BitterRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BitterRegular/BitterRegular.woff") format("woff"), url("../fonts/BitterRegular/BitterRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HarmonicaBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/HarmonicaSansProCyr-Bold/HarmonicaSansProCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HarmonicaSansProCyr-Bold/HarmonicaSansProCyr-Bold.woff") format("woff"), url("../fonts/HarmonicaSansProCyr-Bold/HarmonicaSansProCyr-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenCondBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSans-CondBold/OpenSans-CondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-CondBold/OpenSans-CondensedBold.woff") format("woff"), url("../fonts/OpenSans-CondBold/OpenSans-CondensedBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HarmonicaRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HarmonicaSansProCyr-Regular/HarmonicaSansProCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HarmonicaSansProCyr-Regular/HarmonicaSansProCyr-Regular.woff") format("woff"), url("../fonts/HarmonicaSansProCyr-Regular/HarmonicaSansProCyr-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSans/OpenSansLight/OpenSansLight.ttf") format("truetype"); }
