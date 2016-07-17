@@ -38,6 +38,7 @@ body
 	position: relative
 	line-height: 1.42857
 	-webkit-font-smoothing: antialised
+	background-color: #fff
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -74,6 +75,225 @@ h1
 	display: none
 
 
+.main_head
+	width: 100%
+	min-height: 225px
+	position: relative
+
+.header_top
+	width: 100%
+	min-height: 93px
+	border-bottom: 6px solid $main_color
+	.tel
+		display: block
+		color: #806f89
+		font-family: "HarmoniaRegular"
+		&:nth-child(1)
+			padding-top: 22px 
+		&:nth-child(3)
+			padding-bottom: 22px 
+
+.mnu
+	width: 100%
+	height: auto
+	text-align: center
+	position: relative
+	nav
+		width: 100%
+		height: auto
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			text-align: center
+			.lang-item
+				margin: 40px 7px
+				float: right
+				>a
+					font-family: "HarmoniaRegular"
+					color: #858eb3
+
+			.current-lang
+				>a
+					color: $orange
+			>li
+				display: inline-block
+				padding: 0
+				margin: 0
+				margin: 40px 30px
+				>a
+					text-decoration: none
+					font-family: "HarmoniaBold"
+					font-size: em(17px)
+					color: $main_color
+					cursor: pointer
+					&:hover
+						color: $orange
+			
+.mnu
+	nav
+		ul
+			.current-menu-item
+				a
+					color: $orange
+.mnu
+	nav
+		ul
+			.current_page_item
+				a
+					color: $orange	
+
+#menu
+	clear: both
+	ul
+		display: block
+
+.logo_mnu
+	display: none
+
+
+
+
+// menu toggle start
+
+
+	
+#toggle_mnu
+  display: block
+
+  height: auto
+  text-align: right
+  
+  
+  // margin: 20px auto 10px
+  span
+    &:after, &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: -9px
+    &:after
+      top: 9px
+      width: 100%
+      height: 3px
+      background-color: #888
+      transition: all 0.3s
+      backface-visibility: hidden
+      border-radius: 2px
+    position: relative
+    display: block
+    width: 100%
+    height: 3px
+    background-color: #888
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+    &:before
+      width: 100%
+      height: 3px
+      background-color: #888
+      transition: all 0.3s
+      backface-visibility: hidden
+      border-radius: 2px
+  &.on
+    span
+      background-color: transparent
+      &:before
+        transform: rotate(45deg) translate(5px, 5px)
+      &:after
+        transform: rotate(-45deg) translate(7px, -8px)
+    + #menu
+      opacity: 1
+      visibility: visible
+
+#toggle_mnu
+	display: none
+
+// menu toggle end
+
+// header bottom
+
+.header_bottom
+	width: 100%
+	height: auto
+	position: relative
+	padding: 20px 0
+	.logo
+		display: inline-block
+		height: auto
+		cursor: pointer
+
+		img
+			display: inline-block
+			vertical-align: middle
+			width: 110px
+			height: 125px
+	.comp
+		display: inline-block
+		width: 63%
+		vertical-align: middle
+		padding: 0 20px
+		margin-top: 20px
+		span
+			
+			
+			
+			&:first-child
+				font-size: em(28px)
+				color: $main_color
+				white-space: pre-line
+				font-family: "HarmoniaRegular"
+				line-height: 31px
+			&:last-child
+				font-size: em(14px)
+				color: #858eb3
+				font-family: "HarmoniaRegular"
+				line-height: 15px
+				
+.mnu_bottom
+	width: 100%
+	height: auto
+	padding-top: 42px
+	ul
+		margin: 0
+		padding: 0
+
+		li
+			list-style-type: none
+			display: inline-block
+			
+			a
+				display: block
+				text-decoration: none
+				font-family: "HarmoniaRegular"
+				font-size: em(18px)
+				cursor: pointer
+				color: #604a6e
+
+			&:nth-child(1)
+				border-right: 1px solid #533774
+				padding-right: 10px
+				padding-left: 10px
+			&:nth-child(2)
+				border-right: 1px solid #533774
+				padding-right: 10px
+				padding-left: 10px
+			&:nth-child(3)
+				border-right: 1px solid #533774
+				padding-right: 10px
+				padding-left: 10px
+			&:nth-child(4)
+				border-right: none
+				padding-left: 10px
+			&:hover
+				color: $main_color
+				font-weight: 700
+
+
+
+
+
+@import "../css/media"
 
 
 
@@ -81,23 +301,4 @@ h1
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import "media.sass"
+// @import "../css/media"

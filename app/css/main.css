@@ -9,7 +9,8 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.42857;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  background-color: #fff; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -39,3 +40,309 @@ h1 {
 
 .hidden {
   display: none; }
+
+.main_head {
+  width: 100%;
+  min-height: 225px;
+  position: relative; }
+
+.header_top {
+  width: 100%;
+  min-height: 93px;
+  border-bottom: 6px solid #604b6c; }
+  .header_top .tel {
+    display: block;
+    color: #806f89;
+    font-family: "HarmoniaRegular"; }
+    .header_top .tel:nth-child(1) {
+      padding-top: 22px; }
+    .header_top .tel:nth-child(3) {
+      padding-bottom: 22px; }
+
+.mnu {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative; }
+  .mnu nav {
+    width: 100%;
+    height: auto; }
+    .mnu nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+      .mnu nav ul .lang-item {
+        margin: 40px 7px;
+        float: right; }
+        .mnu nav ul .lang-item > a {
+          font-family: "HarmoniaRegular";
+          color: #858eb3; }
+      .mnu nav ul .current-lang > a {
+        color: #fdb111; }
+      .mnu nav ul > li {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        margin: 40px 30px; }
+        .mnu nav ul > li > a {
+          text-decoration: none;
+          font-family: "HarmoniaBold";
+          font-size: 1.0625em;
+          color: #604b6c;
+          cursor: pointer; }
+          .mnu nav ul > li > a:hover {
+            color: #fdb111; }
+
+.mnu nav ul .current-menu-item a {
+  color: #fdb111; }
+
+.mnu nav ul .current_page_item a {
+  color: #fdb111; }
+
+#menu {
+  clear: both; }
+  #menu ul {
+    display: block; }
+
+.logo_mnu {
+  display: none; }
+
+#toggle_mnu {
+  display: block;
+  height: auto;
+  text-align: right; }
+  #toggle_mnu span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #888;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
+    #toggle_mnu span:after, #toggle_mnu span:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -9px; }
+    #toggle_mnu span:after {
+      top: 9px;
+      width: 100%;
+      height: 3px;
+      background-color: #888;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-border-radius: 2px;
+              border-radius: 2px; }
+    #toggle_mnu span:before {
+      width: 100%;
+      height: 3px;
+      background-color: #888;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-border-radius: 2px;
+              border-radius: 2px; }
+  #toggle_mnu.on span {
+    background-color: transparent; }
+    #toggle_mnu.on span:before {
+      -webkit-transform: rotate(45deg) translate(5px, 5px);
+          -ms-transform: rotate(45deg) translate(5px, 5px);
+              transform: rotate(45deg) translate(5px, 5px); }
+    #toggle_mnu.on span:after {
+      -webkit-transform: rotate(-45deg) translate(7px, -8px);
+          -ms-transform: rotate(-45deg) translate(7px, -8px);
+              transform: rotate(-45deg) translate(7px, -8px); }
+  #toggle_mnu.on + #menu {
+    opacity: 1;
+    visibility: visible; }
+
+#toggle_mnu {
+  display: none; }
+
+.header_bottom {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 20px 0; }
+  .header_bottom .logo {
+    display: inline-block;
+    height: auto;
+    cursor: pointer; }
+    .header_bottom .logo img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 110px;
+      height: 125px; }
+  .header_bottom .comp {
+    display: inline-block;
+    width: 63%;
+    vertical-align: middle;
+    padding: 0 20px;
+    margin-top: 20px; }
+    .header_bottom .comp span:first-child {
+      font-size: 1.75em;
+      color: #604b6c;
+      white-space: pre-line;
+      font-family: "HarmoniaRegular";
+      line-height: 31px; }
+    .header_bottom .comp span:last-child {
+      font-size: 0.875em;
+      color: #858eb3;
+      font-family: "HarmoniaRegular";
+      line-height: 15px; }
+
+.mnu_bottom {
+  width: 100%;
+  height: auto;
+  padding-top: 42px; }
+  .mnu_bottom ul {
+    margin: 0;
+    padding: 0; }
+    .mnu_bottom ul li {
+      list-style-type: none;
+      display: inline-block; }
+      .mnu_bottom ul li a {
+        display: block;
+        text-decoration: none;
+        font-family: "HarmoniaRegular";
+        font-size: 1.125em;
+        cursor: pointer;
+        color: #604a6e; }
+      .mnu_bottom ul li:nth-child(1) {
+        border-right: 1px solid #533774;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .mnu_bottom ul li:nth-child(2) {
+        border-right: 1px solid #533774;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .mnu_bottom ul li:nth-child(3) {
+        border-right: 1px solid #533774;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .mnu_bottom ul li:nth-child(4) {
+        border-right: none;
+        padding-left: 10px; }
+      .mnu_bottom ul li:hover {
+        color: #604b6c;
+        font-weight: 700; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1170px) {
+  .header_bottom .comp {
+    width: 100%;
+    padding: 0; } }
+
+@media only screen and (max-width: 991px) {
+  .mnu_bottom ul li a {
+    font-size: 0.92em; }
+  .mnu_bottom ul li:nth-child(1) {
+    padding: 0 5px;
+    border: none; }
+  .mnu_bottom ul li:nth-child(2) {
+    padding: 0 5px;
+    border: none; }
+  .mnu_bottom ul li:nth-child(3) {
+    padding: 0 5px;
+    border: none; }
+  .mnu_bottom ul li:nth-child(4) {
+    padding: 0 5px;
+    border: none; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #menu {
+    display: none; }
+  #toggle_mnu {
+    display: inline-block; }
+  .mnu {
+    text-align: right;
+    min-height: 60px;
+    width: 70%;
+    min-width: 200px;
+    padding-top: 10px;
+    /*padding: 10px 0;*/
+    border: 1px solid #604b6c;
+    /*margin-bottom: 20px;*/
+    margin: 0 auto 20px; }
+  .fa-bars {
+    padding: 5px 13px;
+    border: 1px solid #604b6c;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #604b6c; }
+  .mnu nav ul > li {
+    display: block;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase; }
+  .mnu nav ul .lang-item {
+    display: inline-block;
+    border: 1px solid #604b6c;
+    margin: 0 0 10px 0;
+    float: none;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "HarmoniaRegular"; }
+  .mnu nav ul .current_page_item {
+    background-color: #695175; }
+  .header_top .tel:nth-child(3) {
+    padding-bottom: 0; }
+  .mnu nav ul > li > a {
+    width: 100%;
+    padding: 12px 20px 10px;
+    height: auto;
+    display: block; }
+  .logo_mnu {
+    display: block;
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    clear: both;
+    float: left;
+    padding-left: 10px; }
+  .logo_mnu img {
+    width: 35px;
+    height: 40px; }
+  .logo_mnu span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    font-family: "HarmoniaRegular"; }
+  .mnu_bottom {
+    padding: 0;
+    text-align: left; }
+  .mnu_bottom ul li a {
+    font-size: 13px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .mnu {
+    width: 100%; } }
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  #menu {
+    display: inline-block !important; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /*#menu{
+	display: inline-block !important;
+}*/ }
+
+/* Large Devices, Wide Screens */
