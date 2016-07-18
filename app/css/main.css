@@ -213,7 +213,7 @@ h1 {
       display: inline-block;
       background: none;
       font-family: "HarmoniaRegular";
-      font-size: 0.875em;
+      font-size: 1em;
       width: auto;
       height: auto;
       padding-top: 0;
@@ -449,11 +449,11 @@ ul {
   .main_footer .mnu nav ul > li {
     margin: 48px 20px; }
   .mnu_bottom ul li {
-    font-size: 0.85em; } }
+    font-size: 0.95em; } }
 
 @media only screen and (max-width: 991px) {
   .mnu_bottom ul li a {
-    font-size: 0.79em;
+    font-size: 0.86em;
     text-decoration: underline; }
   .mnu_bottom ul li:nth-child(1) {
     padding: 0 5px;

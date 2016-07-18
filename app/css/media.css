@@ -19,13 +19,13 @@
 		margin: 48px 20px;
 	}
 	.mnu_bottom ul li{
-		font-size: 0.85em;
+		font-size: 0.95em;
 	}
 }
 
 @media only screen and (max-width : 991px){
 	.mnu_bottom ul li a{
-		font-size: 0.79em;
+		font-size: 0.86em;
 	    text-decoration: underline;
 	}
 
