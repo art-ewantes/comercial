@@ -437,6 +437,36 @@ ul {
   color: #604b6c;
   padding-bottom: 20px; }
 
+.about_us {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px; }
+  .about_us h1 {
+    position: relative;
+    margin: 0 20px;
+    display: inline-block;
+    font-size: 1.6875em;
+    font-family: "BitterRegular";
+    font-weight: 300;
+    color: #85778d; }
+    .about_us h1:after {
+      content: "";
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: -10px;
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background-color: #704361; }
+  .about_us p {
+    font-size: 1em;
+    font-family: "OpenSans";
+    line-height: 1.6875em;
+    color: #4a4b51;
+    padding: 35px 0 45px; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
