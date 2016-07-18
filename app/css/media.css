@@ -51,6 +51,9 @@
 	.content p{
 		font-size: 1.025em;
 	}
+	.contact_us{
+		float: none;
+	}
 }
 
 
@@ -145,6 +148,9 @@
 }
 .social i {
 	font-size: 3.5625em;
+}
+.contact_us{
+	margin: 0 auto;
 }
 }
 
