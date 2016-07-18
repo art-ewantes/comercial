@@ -572,6 +572,56 @@ ul {
     height: 3px;
     background-color: #fff; }
 
+.blog_ {
+  width: 100%;
+  height: auto;
+  border-bottom: 6px solid #604b6c; }
+
+.blog_item {
+  width: 100%;
+  height: auto;
+  padding: 40px 0; }
+  .blog_item > img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .blog_item p {
+    padding: 30px 0;
+    font-size: 1.0625em;
+    line-height: 1.5em;
+    font-family: "OpenSans"; }
+  .blog_item .btn-1b {
+    padding: 15px 55px 10px; }
+  .blog_item .news_title h1 {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 1.875em;
+    font-family: "BitterRegular";
+    font-weight: 300;
+    padding-left: 40px;
+    color: #604b6c; }
+    .blog_item .news_title h1:after {
+      content: "";
+      width: 33px;
+      height: 50px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      background: url(../img/blog_checkin.png) no-repeat; }
+
+.categories a {
+  position: relative;
+  color: #4d4a4f;
+  font-size: 0.8125em; }
+  .categories a:before {
+    content: "\f07c";
+    padding-right: 7px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -683,6 +733,10 @@ ul {
     font-size: 3.5625em; }
   .contact_us {
     margin: 0 auto; } }
+
+@media only screen and (max-width: 680px) {
+  .blog_item .news_title h1 {
+    font-size: 1.575em; } }
 
 @media only screen and (max-width: 520px) {
   .logo_mnu span {
