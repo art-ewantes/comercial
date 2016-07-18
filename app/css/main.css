@@ -589,7 +589,8 @@ ul {
     padding: 30px 0;
     font-size: 1.0625em;
     line-height: 1.5em;
-    font-family: "OpenSans"; }
+    font-family: "OpenSans";
+    color: #626262; }
   .blog_item .btn-1b {
     padding: 15px 55px 10px; }
   .blog_item .news_title h1 {
@@ -621,6 +622,75 @@ ul {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit; }
+
+.blog_page .blog_item img {
+  padding-bottom: 50px; }
+
+.blog_page .blog_item .blog_info {
+  padding: 0 40px; }
+  .blog_page .blog_item .blog_info > img {
+    width: 100%;
+    height: auto;
+    padding-top: 70px; }
+
+.blog_page .news_title h1 {
+  display: block;
+  position: relative;
+  vertical-align: middle;
+  font-size: 1.875em;
+  font-family: "BitterRegular";
+  font-weight: 300;
+  padding-left: 0;
+  color: #604b6c; }
+  .blog_page .news_title h1:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background: none; }
+
+.blog_page .categories a:before {
+  margin-left: 0; }
+
+blockquote {
+  font-family: "OpenSans";
+  font-size: 1.0625em;
+  line-height: 1.5em;
+  color: #626262;
+  padding: 0 20px; }
+  blockquote:before {
+    content: "\f10d";
+    padding-right: 7px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit; }
+  blockquote:after {
+    content: "\f10e";
+    padding-right: 7px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit; }
+
+.tags {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .tags a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #604b6c;
+    cursor: inherit;
+    font-size: 0.8125em;
+    color: #626262;
+    margin-top: 10px; }
+    .tags a:hover {
+      text-decoration: underline;
+      -webkit-transition: 2.9s;
+      transition: 2.9s; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
