@@ -11,11 +11,21 @@
 		width: 100%;
 		padding: 0;
 	}
+	.main_footer .comp{
+		width: 44%;
+	}
+	.main_footer .mnu nav ul > li
+	{
+		margin: 48px 30px;
+	}
+	.mnu_bottom ul li{
+		font-size: 0.85em;
+	}
 }
 
 @media only screen and (max-width : 991px){
 	.mnu_bottom ul li a{
-		font-size: 0.92em;
+		font-size: 0.79em;
 
 	}
 
@@ -35,6 +45,9 @@
 		padding: 0 5px;
 		border: none;
 	}
+	.mnu_bottom{
+		padding-top: 25px;
+	}
 }
 
 
@@ -43,6 +56,7 @@
 #menu {
 	display: none;
 }
+
 #toggle_mnu{
 	display: inline-block;
 }
@@ -108,16 +122,18 @@
 .logo_mnu span{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 17px;
+	font-size: 15px;
+	margin-left: 10px;
 	font-family: "HarmoniaRegular";
 }
 .mnu_bottom{
 	padding: 0;
-	text-align: left;
+	text-align: center;
 }
+
 .mnu_bottom ul li a{
 	font-size: 13px;
-
+	text-decoration: underline;
 }
 }
 
@@ -129,7 +145,13 @@
 
 @media only screen and (max-width : 520px){
 
-
+.logo_mnu span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 13px;
+	margin-left: 10px;
+	font-family: "HarmoniaRegular";
+}
 
 }
 /* Extra Small Devices, Phones */
