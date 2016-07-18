@@ -16,7 +16,7 @@
 	}
 	.main_footer .mnu nav ul > li
 	{
-		margin: 48px 30px;
+		margin: 48px 20px;
 	}
 	.mnu_bottom ul li{
 		font-size: 0.85em;
@@ -26,7 +26,7 @@
 @media only screen and (max-width : 991px){
 	.mnu_bottom ul li a{
 		font-size: 0.79em;
-
+	    text-decoration: underline;
 	}
 
 	.mnu_bottom ul li:nth-child(1){
@@ -47,6 +47,9 @@
 	}
 	.mnu_bottom{
 		padding-top: 25px;
+	}
+	.content p{
+		font-size: 1.025em;
 	}
 }
 
@@ -135,6 +138,14 @@
 	font-size: 13px;
 	text-decoration: underline;
 }
+.social{
+	margin-left: 0;
+	display: block
+
+}
+.social i {
+	font-size: 3.5625em;
+}
 }
 
 @media only screen and (max-width : 680px){
@@ -151,6 +162,9 @@
 	font-size: 13px;
 	margin-left: 10px;
 	font-family: "HarmoniaRegular";
+}
+.news h3{
+	line-height: 1.4em;
 }
 
 }

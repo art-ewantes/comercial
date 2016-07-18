@@ -299,7 +299,114 @@ h1
 
 // header end
 
-// main start
+
+
+
+// footer start
+
+.main_footer
+	width: 100%
+	height: auto
+	border-top: 6px solid #604b6c
+	border-bottom: 6px solid #604b6c
+	padding-top: 20px
+	.copirating
+		display: inline-block
+		width: 100%
+		height: auto
+		text-align: center
+		padding-bottom: 5px
+		font-size: em(14px)
+		font-family: "OpenSansLight"
+	.logo
+		display: inline-block
+		height: auto
+		cursor: pointer
+
+		img
+			display: inline-block
+			vertical-align: middle
+			width: 100%
+			height: auto
+
+	.comp
+		display: inline-block
+		width: 63%
+		vertical-align: middle
+		padding: 0 20px
+		margin-top: 20px
+		span
+			&:first-child
+				font-size: em(20px)
+				color: $main_color
+				white-space: pre-line
+				font-family: "HarmoniaRegular"
+				line-height: 31px
+			&:last-child
+				font-size: em(12px)
+				color: #858eb3
+				font-family: "HarmoniaRegular"
+				line-height: 15px
+	.mnu
+		nav
+			ul
+				>li
+				    margin: 39px 30px;
+ 
+
+.develop
+	width: 100%
+	height: 95px
+	display: table
+	vertical-align: middle
+	a
+		display: table-cell
+		vertical-align: middle
+		span
+			display: block
+			font-size: em(14px)
+			font-family: "OpenSans"
+			padding-bottom: 5px
+			color: #8a8a8b
+			text-align: center
+		img
+			display: block
+			width: 92px
+			height: 23px
+			margin: 0 auto
+
+.social
+	display: inline-block
+	vertical-align: middle
+	margin-left: 20px
+	text-align: center
+	i
+		color: #395d98
+		font-size: em(25px)
+
+// footer end
+.btn-1b 
+	background-color: $orange
+	color: #f0ebf3
+	text-transform: uppercase
+	padding: 15px 30px 10px
+	background-color: $orange
+	border-radius: 10px
+	letter-spacing: 2px
+	font-size: em(13px)
+	font-family: "HarmoniaRegular"
+	margin: 0 auto
+	cursor: inherit
+.btn-1b:hover 
+	background: transparent
+	color: #f0ebf3
+.btn-1b:after
+	background: $main_color
+
+
+
+
+// home page start
 
 main
 	width: 100%
@@ -400,6 +507,10 @@ ul
 		font-family: "OpenSans"
 		line-height: em(36px)
 		color: #858eb3
+		transition: .2s
+		&:hover
+			color: $orange
+			transition: .2s
 	p
 		text-align: left
 		font-size: em(16px)
@@ -414,101 +525,9 @@ ul
 	color: $main_color
 	padding-bottom: 20px
 
-// main end
+// home page end
 
 
-// footer start
-
-.main_footer
-	width: 100%
-	height: auto
-	border-top: 6px solid #604b6c
-	border-bottom: 6px solid #604b6c
-	padding-top: 20px
-	.copirating
-		display: inline-block
-		width: 100%
-		height: auto
-		text-align: center
-		padding-bottom: 5px
-		font-size: em(14px)
-		font-family: "OpenSansLight"
-	.logo
-		display: inline-block
-		height: auto
-		cursor: pointer
-
-		img
-			display: inline-block
-			vertical-align: middle
-			width: 100%
-			height: auto
-
-	.comp
-		display: inline-block
-		width: 63%
-		vertical-align: middle
-		padding: 0 20px
-		margin-top: 20px
-		span
-			&:first-child
-				font-size: em(20px)
-				color: $main_color
-				white-space: pre-line
-				font-family: "HarmoniaRegular"
-				line-height: 31px
-			&:last-child
-				font-size: em(12px)
-				color: #858eb3
-				font-family: "HarmoniaRegular"
-				line-height: 15px
-	.mnu
-		nav
-			ul
-				>li
-				    margin: 39px 30px;
- 
-
-.develop
-	width: 100%
-	height: 95px
-	display: table
-	vertical-align: middle
-	a
-		display: table-cell
-		vertical-align: middle
-		span
-			display: block
-			font-size: em(14px)
-			font-family: "OpenSans"
-			padding-bottom: 5px
-			color: #8a8a8b
-			text-align: center
-		img
-			display: block
-			width: 92px
-			height: 23px
-			margin: 0 auto
-
-
-// footer end
-.btn-1b 
-	background-color: $orange
-	color: #f0ebf3
-	text-transform: uppercase
-	padding: 15px 30px 10px
-	background-color: $orange
-	border-radius: 10px
-	letter-spacing: 2px
-	font-size: em(13px)
-	font-family: "HarmoniaRegular"
-	margin: 0 auto
-	cursor: inherit
-.btn-1b:hover 
-	background: transparent
-	color: #f0ebf3
-.btn-1b:after
-	background: $main_color
 
 
 @import "../css/media"
