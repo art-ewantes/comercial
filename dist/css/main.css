@@ -536,19 +536,22 @@ main {
       color: #f2f2f4;
       padding: 12px 30px;
       font-weight: 300;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      margin-bottom: 20px; }
     .skills_items .item span {
       max-width: 450px;
       height: auto;
-      padding: 55px 0;
       display: block;
       font-size: 0.9375em;
       font-family: "OpenSans";
       color: #595a60; }
+    .skills_items .item form button {
+      margin-top: 20px; }
 
 ul {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 20px; }
   ul li {
     max-width: 260px;
     font-size: 0.9375em;
@@ -890,6 +893,46 @@ blockquote {
       -webkit-transition: 2.9s;
       transition: 2.9s; }
 
+.about_business {
+  width: 100%;
+  height: auto;
+  padding: 50px 0; }
+  .about_business .about p {
+    padding: 11px 0 24px; }
+  .about_business .about h1 {
+    margin: 0 0 40px; }
+  .about_business .skills_items .item form button {
+    padding: 15px 40px 10px; }
+
+.list_type_two {
+  width: 100%;
+  height: auto;
+  padding-top: 80px; }
+  .list_type_two ul {
+    list-style-type: disc;
+    list-style: inherit;
+    list-style-position: inside; }
+  .list_type_two h3,
+  .list_type_two li {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    line-height: 2.1875em;
+    font-family: "OpenSans"; }
+  .list_type_two li {
+    font-size: 1.125em;
+    color: #604b6c;
+    background: none;
+    max-width: 100%;
+    list-style: inherit;
+    padding: 0;
+    margin: 0; }
+    .list_type_two li span {
+      color: #595a60; }
+  .list_type_two h3 {
+    color: #604b6c;
+    font-size: 1.25em; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1019,14 +1062,26 @@ blockquote {
     line-height: 1.4em; }
   .main_footer .logo img {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+  .owl-carousel .item span {
+    font-size: 1.5125em; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .mnu {
-    width: 100%; } }
+    width: 100%; }
+  .owl-carousel .item span {
+    font-size: 1.2125em; } }
+
+@media only screen and (max-width: 420px) {
+  .owl-carousel .item span {
+    font-size: 1.1125em; } }
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 380px) {
+  .owl-carousel .item span {
+    font-size: 0.9em; } }
+
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */

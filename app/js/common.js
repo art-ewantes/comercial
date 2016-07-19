@@ -11,7 +11,7 @@ $(document).ready(function() {
 	    loop:true,
 	    margin:10,
 	    // nav:true,
-	    autoplay: true,
+	    
 	    autoplayTimeout: 4000,
 	    autoplaySpeed:1400,
 	    pagination:true,
@@ -22,10 +22,12 @@ $(document).ready(function() {
 	            items:1
 	        },
 	        600:{
-	            items:1
+	            items:1,
+	            autoplay: false,
 	        },
-	        1000:{
-	            items:1
+	        700:{
+	            items:1,
+	            autoplay: true,
 	        }
 	    }
 	});

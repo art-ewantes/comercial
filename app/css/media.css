@@ -181,6 +181,9 @@
 	width: 100%;
 	height: auto;
 }
+.owl-carousel .item span{
+	font-size: 1.5125em;
+}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -188,17 +191,24 @@
 .mnu{
 	width: 100%;
 }
+.owl-carousel .item span{
+	font-size: 1.2125em;
+}
 
 }
 
 @media only screen and (max-width : 420px) {
-
+.owl-carousel .item span{
+	font-size: 1.1125em;
+}
 }
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 380px) {
-
+.owl-carousel .item span{
+	font-size: 0.9em;
+}
 
 }
 
