@@ -22,7 +22,7 @@
     "html5shiv": "^3.7.3",
     "bootstrapvalidator": "^0.5.3",
     "respond": "Respond#^1.4.2",
-    "owl.carousel": "owl-carousel2#^2.1.1",
+    "owl.carousel": "^2.1.6",
     "bourbon": "^4.2.7",
     "bootstrap-grid": "^3.3.6-beta.1"
   },

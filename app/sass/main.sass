@@ -428,6 +428,164 @@ main
 	width: 100%
 	height: auto
 
+
+.owl-carousel
+	margin-bottom: 20px
+	.owl-stage-outer
+		border-radius: 7px
+
+	.item
+		span
+			display: inline-block
+			padding: 5px 30px
+			font-size: em(29px)
+			font-family: "OpenCondBold"
+			position: absolute
+			background-color: $main_color
+			color: #fdfdff
+		.top
+			left: 0
+			top: 18px
+		.bottom
+			right: 0 
+			bottom: 50px
+		.btn
+			position: absolute
+			right: 55px
+			bottom: 5px
+			padding: 10px 30px 7px
+			font-size: em(12px)
+			cursor: pointer
+			border-radius: 7px
+			// &:before
+			// 	background-color:
+		.btn-1
+			border: none 
+		.btn-1b:hover 
+			background: $main_color
+			color: #f0ebf3
+.owl-theme 
+	.owl-dots 
+		.owl-dot.active
+			zoom: 1.5
+			span
+				width: 7px
+				height: 7px
+				background-color: $orange
+
+		.owl-dot
+			span
+				width: 7px
+				height: 7px
+				background-color: #7a9a9b
+				margin: -4px 5px
+
+
+.contact_form
+	height: auto
+	padding: 35px 20px
+	background-color: $main_color
+	border-radius: 7px
+	max-width: 300px
+	margin: 0 auto
+	h1
+		font-size: em(24px)
+		font-family: "Lato-Black"
+		padding-bottom: 25px
+		text-align: center
+		color: #fff
+	form
+		width: 100%
+		height: auto
+		display: block
+
+	.group
+		display: block
+		margin-bottom: 15px
+		input, 
+		textarea	
+			width: 100%
+			height: auto
+			padding: 8px 18px 8px 38px
+			border-radius: 7px
+			color: #9fa3a7
+		textarea
+			min-height: 120px
+			padding: 8px 18px 8px 19px
+			resize: none
+		// input
+		// 	min-height: 32px
+.contact_form
+	.user
+		position: relative
+
+		&:after
+			content: "\f007"
+			padding-right: 7px
+			padding-left: 20px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #9fa3a7
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+		input
+			padding: 8px 18px 8px 38px
+.contact_form
+	.email
+		position: relative
+
+		&:after
+			content: "\f0e0"
+			padding-right: 7px
+			padding-left: 20px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #9fa3a7
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+.contact_form
+	.phone
+		position: relative
+
+		&:after
+			content: "\f10b"
+			padding-right: 7px
+			padding-left: 20px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #9fa3a7
+			top: 50%
+			left: 0
+			transform: translateY(-50%)	
+			font-size: em(22px)		
+			margin-left: 3px
+.contact_form
+	form
+		.btn-1b
+			padding: 15px 30px 10px
+			display: block
+			text-align: center
+			border: $main_color
+			cursor: pointer
+			&:hover
+				color: $main_color
+				background: #f0ebf3	
+			&:after
+				background: transparent !important
+.fixed
+	margin-top: 20px
+
 .content
 	width: 100%
 	height: auto

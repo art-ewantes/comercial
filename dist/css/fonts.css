@@ -33,3 +33,9 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/OpenSans/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSans/OpenSansLight/OpenSansLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Lato-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Lato-Black/Lato-Black_0.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Black/Lato-Black_0.woff") format("woff"), url("../fonts/Lato-Black/Lato-Black_0.ttf") format("truetype"); }

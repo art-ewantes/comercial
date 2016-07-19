@@ -351,6 +351,160 @@ main {
   width: 100%;
   height: auto; }
 
+.owl-carousel {
+  margin-bottom: 20px; }
+  .owl-carousel .owl-stage-outer {
+    -webkit-border-radius: 7px;
+            border-radius: 7px; }
+  .owl-carousel .item span {
+    display: inline-block;
+    padding: 5px 30px;
+    font-size: 1.8125em;
+    font-family: "OpenCondBold";
+    position: absolute;
+    background-color: #604b6c;
+    color: #fdfdff; }
+  .owl-carousel .item .top {
+    left: 0;
+    top: 18px; }
+  .owl-carousel .item .bottom {
+    right: 0;
+    bottom: 50px; }
+  .owl-carousel .item .btn {
+    position: absolute;
+    right: 55px;
+    bottom: 5px;
+    padding: 10px 30px 7px;
+    font-size: 0.75em;
+    cursor: pointer;
+    -webkit-border-radius: 7px;
+            border-radius: 7px; }
+  .owl-carousel .item .btn-1 {
+    border: none; }
+  .owl-carousel .item .btn-1b:hover {
+    background: #604b6c;
+    color: #f0ebf3; }
+
+.owl-theme .owl-dots .owl-dot.active {
+  zoom: 1.5; }
+  .owl-theme .owl-dots .owl-dot.active span {
+    width: 7px;
+    height: 7px;
+    background-color: #fdb111; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 7px;
+  height: 7px;
+  background-color: #7a9a9b;
+  margin: -4px 5px; }
+
+.contact_form {
+  height: auto;
+  padding: 35px 20px;
+  background-color: #604b6c;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  max-width: 300px;
+  margin: 0 auto; }
+  .contact_form h1 {
+    font-size: 1.5em;
+    font-family: "Lato-Black";
+    padding-bottom: 25px;
+    text-align: center;
+    color: #fff; }
+  .contact_form form {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .contact_form .group {
+    display: block;
+    margin-bottom: 15px; }
+    .contact_form .group input,
+    .contact_form .group textarea {
+      width: 100%;
+      height: auto;
+      padding: 8px 18px 8px 38px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      color: #9fa3a7; }
+    .contact_form .group textarea {
+      min-height: 120px;
+      padding: 8px 18px 8px 19px;
+      resize: none; }
+
+.contact_form .user {
+  position: relative; }
+  .contact_form .user:after {
+    content: "\f007";
+    padding-right: 7px;
+    padding-left: 20px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: #9fa3a7;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .contact_form .user input {
+    padding: 8px 18px 8px 38px; }
+
+.contact_form .email {
+  position: relative; }
+  .contact_form .email:after {
+    content: "\f0e0";
+    padding-right: 7px;
+    padding-left: 20px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: #9fa3a7;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.contact_form .phone {
+  position: relative; }
+  .contact_form .phone:after {
+    content: "\f10b";
+    padding-right: 7px;
+    padding-left: 20px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: #9fa3a7;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 1.375em;
+    margin-left: 3px; }
+
+.contact_form form .btn-1b {
+  padding: 15px 30px 10px;
+  display: block;
+  text-align: center;
+  border: #604b6c;
+  cursor: pointer; }
+  .contact_form form .btn-1b:hover {
+    color: #604b6c;
+    background: #f0ebf3; }
+  .contact_form form .btn-1b:after {
+    background: transparent !important; }
+
+.fixed {
+  margin-top: 20px; }
+
 .content {
   width: 100%;
   height: auto;
@@ -727,7 +881,9 @@ blockquote {
   .content p {
     font-size: 1.025em; }
   .contact_us {
-    float: none; } }
+    float: none; }
+  .contact_form {
+    max-width: 100%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {

@@ -54,6 +54,9 @@
 	.contact_us{
 		float: none;
 	}
+	.contact_form{
+		max-width: 100%;
+	}
 }
 
 
