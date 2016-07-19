@@ -177,7 +177,10 @@
 .news h3{
 	line-height: 1.4em;
 }
-
+.main_footer .logo img{
+	width: 100%;
+	height: auto;
+}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
