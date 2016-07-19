@@ -32,10 +32,10 @@
 														
 								<nav id="menu">
 									<ul>
-										<li class="current_page_item current-menu-item"><a href="#">Главная</a></li>
-										<li><a href="#">О нас</a></li>
-										<li><a href="#">Контакты</a></li>
-										<li><a href="#">Блог</a></li>
+										<li class="current_page_item current-menu-item"><a href="index.html">Главная</a></li>
+										<li><a href="AboutUs.html">О нас</a></li>
+										<li><a href="Contact.html">Контакты</a></li>
+										<li><a href="Blog.html">Блог</a></li>
 										<li class="lang-item"><a href="#">ENG</a></li>
 										<li class="lang-item current-lang"><a href="#">RU</a></li>
 										<li class="lang-item"><a href="#">UA</a></li>
@@ -87,9 +87,54 @@
 						<h1>Напишите нам</h1>
 						<p>Чтобы связаться с нами - заполните форму и укажите интересующие вас вопросы. Для полного ответа максимально опишите ваш запрос. Мы свяжемся с вами в течении 24 часов. </p>
 					</div>
-					<div class="contact_form">
-						
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="contact_page">
+								<form action="">
+									<label class="group">
+										<span class="color"></span>
+										<input type="text" placeholder="Ваше Имя" >
+									</label>
+									<label class="group ">
+										<input type="phone" name="phone" placeholder="Телефон" >
+									</label>
+									<label class="group ">
+										<input type="callback" name="callback" placeholder="Лучшее время для обратного звонка" >
+									</label>
+									<label class="group ">
+										<input type="email" name="email" placeholder="E-mail" >
+									</label>
+									<label class="group ">
+										<input type="site" name="site" placeholder="Ссылка на сайт" >
+									</label>
+									
+								</form>
+							</div>
+							
+						</div>
+						<div class="col-lg-6">
+							<div class="contact_page_sub">
+								<label class="group">
+									<select required>
+										<option>&nbsp;&nbsp;&nbsp;Услуга</option>
+										<option>Услуга 1</option>
+										<option>Услуга 2</option>
+										<option>Услуга 3</option>
+										<option>Услуга 4</option>
+										<option>Услуга 5</option>
+									</select>
+								</label>
+
+								<label class="group">
+									<textarea name="message" placeholder="Текст повідомлення"></textarea>
+								</label>
+								<button type="submit" class="btn btn-1 btn-1b">Отправить</button>
+								
+							</div>
+							
+						</div>
 					</div>
+					
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-8 col-sm-offset-4 col-xs-12 col-md-offset-0 col-lg-offset-0">
 					<div class="contact_us">

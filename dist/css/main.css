@@ -726,6 +726,50 @@ ul {
     height: 3px;
     background-color: #fff; }
 
+.contact_page,
+.contact_page_sub {
+  width: 100%;
+  height: auto; }
+  .contact_page input,
+  .contact_page textarea,
+  .contact_page select,
+  .contact_page_sub input,
+  .contact_page_sub textarea,
+  .contact_page_sub select {
+    display: block;
+    width: 100%;
+    font-size: 0.8125em;
+    font-family: "OpenSans";
+    padding: 12px 16px;
+    margin-top: 18px;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    border: 1px solid #dedede;
+    background-color: #f6f6f6;
+    color: #9fa3a7; }
+  .contact_page textarea,
+  .contact_page_sub textarea {
+    min-height: 222px;
+    resize: none; }
+  .contact_page select,
+  .contact_page_sub select {
+    height: 41px;
+    padding-left: 10px; }
+    .contact_page select option,
+    .contact_page_sub select option {
+      padding: 12px 16px;
+      display: block;
+      width: 100%;
+      font-size: 0.8125em;
+      font-family: "OpenSans";
+      margin-left: 10px; }
+
+.contact_page_sub .btn {
+  float: right;
+  margin-top: 20px;
+  padding: 15px 39px 10px;
+  letter-spacing: 3px; }
+
 .blog_ {
   width: 100%;
   height: auto;
