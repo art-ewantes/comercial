@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -22,6 +23,12 @@ body input:required:valid,
 body textarea:required:valid {
   outline: none;
   border: 1px solid #52a028; }
+
+a {
+  cursor: pointer; }
+
+button {
+  cursor: pointer; }
 
 h2 {
   font-size: 1.5em; }
@@ -512,7 +519,7 @@ main {
   .content h3 {
     font-size: 1.5625em;
     font-family: "BitterRegular";
-    color: #776383;
+    color: #604b6c;
     font-weight: 300;
     line-height: 1.6875em;
     padding-bottom: 20px; }
@@ -542,7 +549,7 @@ main {
       max-width: 450px;
       height: auto;
       display: block;
-      font-size: 0.9375em;
+      font-size: 1em;
       font-family: "OpenSans";
       color: #595a60; }
     .skills_items .item form button {
@@ -573,12 +580,23 @@ ul {
     height: auto;
     overflow: hidden; }
   .news span {
-    text-align: center;
-    display: block;
+    float: right;
+    display: inline-block;
+    margin-top: 20px;
+    padding-right: 10px;
     font-size: 1em;
     font-family: "OpenCondBold";
     line-height: 1.125em;
     color: #604b6c; }
+  .news a {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #604b6c;
+    font-size: 1em;
+    font-family: "OpenSans"; }
+    .news a:hover {
+      text-decoration: underline; }
   .news h3 {
     text-align: left;
     font-size: 1.625em;
@@ -619,7 +637,7 @@ ul {
     font-size: 1.6875em;
     font-family: "BitterRegular";
     font-weight: 300;
-    color: #85778d; }
+    color: #604b6c; }
     .about h1:after {
       content: "";
       left: 50%;
@@ -910,7 +928,7 @@ blockquote {
   padding-top: 80px; }
   .list_type_two ul {
     list-style-type: disc;
-    list-style: inherit;
+    list-style: none;
     list-style-position: inside; }
   .list_type_two h3,
   .list_type_two li {
@@ -921,17 +939,25 @@ blockquote {
     font-family: "OpenSans"; }
   .list_type_two li {
     font-size: 1.125em;
-    color: #604b6c;
+    color: #595a60;
     background: none;
     max-width: 100%;
     list-style: inherit;
     padding: 0;
     margin: 0; }
-    .list_type_two li span {
-      color: #595a60; }
+    .list_type_two li:before {
+      font-family: 'OpenSans', sans-serif;
+      font-weight: 400;
+      font-size: 1.25em;
+      vertical-align: middle;
+      color: #604b6c;
+      content: "•";
+      padding-right: 7px; }
   .list_type_two h3 {
     color: #604b6c;
     font-size: 1.25em; }
+  .list_type_two p {
+    font-size: 1.1875em; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

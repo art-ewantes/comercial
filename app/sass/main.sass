@@ -50,7 +50,10 @@ body textarea:required:valid
 	// color: #52a028
 	outline: none
 	border: 1px solid #52a028
-
+a
+	cursor: pointer
+button
+	cursor: pointer
 
 h2, h3, h4, h5
 	
@@ -518,6 +521,7 @@ main
 .contact_form
 	.user
 		position: relative
+		
 
 		&:after
 			content: "\f007"
@@ -534,6 +538,7 @@ main
 			transform: translateY(-50%)
 		input
 			padding: 8px 18px 8px 38px
+
 .contact_form
 	.email
 		position: relative
@@ -570,6 +575,22 @@ main
 			transform: translateY(-50%)	
 			font-size: em(22px)		
 			margin-left: 3px
+
+
+// .contact_form
+// 	.user,
+// 	.email,
+// 	.phone,
+// 	.textarea
+// 		.wpcf7-not-valid-tip
+// 			display: block
+// 			// position: absolute
+// 			// line-height: 10px
+// 			font-size: em(13px)
+// 			font-family: "OpenSans"	
+
+
+
 .contact_form
 	form
 		.btn-1b
@@ -593,7 +614,7 @@ main
 	h3
 		font-size: em(25px)
 		font-family: "BitterRegular"
-		color: #776383
+		color: $main_color
 		font-weight: 300
 		line-height: em(27px)
 		padding-bottom: 20px
@@ -624,7 +645,7 @@ main
 			height: auto
 			// padding: 55px 0 0
 			display: block
-			font-size: em(15px)
+			font-size: em(16px)
 			font-family: "OpenSans"
 			color: #595a60
 
@@ -671,12 +692,23 @@ ul
 		height: auto
 		overflow: hidden
 	span
-		text-align: center
-		display: block
+		float: right
+		display: inline-block
+		margin-top: 20px
+		padding-right: 10px
 		font-size: em(16px)
 		font-family: "OpenCondBold"
 		line-height: em(18px)
 		color: $main_color
+	a
+		display: inline-block
+		margin-top: 20px
+		font-weight: 300
+		color: $main_color
+		font-size: em(16px)
+		font-family: "OpenSans"
+		&:hover
+			text-decoration: underline
 	h3
 		text-align: left
 		font-size: em(26px)
@@ -718,7 +750,8 @@ ul
 		font-size: em(27px)
 		font-family: "BitterRegular"
 		font-weight: 300
-		color: #85778d
+		// color: #85778d
+		color: $main_color
 		&:after
 			content: ""
 			left: 50%
@@ -1031,7 +1064,7 @@ blockquote
 	padding-top: 80px
 	ul
 		list-style-type: disc
-		list-style: inherit
+		list-style: none
 		list-style-position: inside
 	h3,
 	li
@@ -1044,19 +1077,28 @@ blockquote
 	li
 		font-size: em(18px)
 		
-		color: $main_color
+		color: #595a60
 		background: none
 		max-width: 100%
 		list-style: inherit
 		padding: 0
 		margin: 0
-		span
-			color: #595a60
+		&:before
+			font-family: 'OpenSans', sans-serif
+			font-weight: 400
+			font-size: em(20px)
+			vertical-align: middle
+			color: $main_color /* Цвет маркера */
+			content: "•"/* Маркер */
+			padding-right: 7px/* Отступ от маркера до текста */
+		// span
+		// 	color: #595a60
 
 	h3
 		color: $main_color
 		font-size: em(20px)
-
+	p
+		font-size: em(19px)
 
 // businessPlan
 
