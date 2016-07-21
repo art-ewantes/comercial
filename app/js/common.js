@@ -32,8 +32,9 @@ $(document).ready(function() {
 	    }
 	});
 
+	$('.collapse').collapse();
 
-
+	$(".teaser-more").parent("p").css("display","inline-block" ).html;
 });
 
 

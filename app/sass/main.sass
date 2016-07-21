@@ -30,6 +30,27 @@ $orange: #fdb111
 	-o-transition: $transition
 	transition: $transition
 
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+
++placeholder
+	color: $main_color
+
+
+
+
 body
 	font-family: "OpenSans", sans-serif
 	font-weight: normal
@@ -47,13 +68,13 @@ body textarea:focus:required:invalid
 	border: 1px solid #52a028
 body input:required:valid,
 body textarea:required:valid
-	// color: #52a028
+	color: #52a028
 	outline: none
 	border: 1px solid #52a028
 a
-	cursor: pointer
+	cursor: pointer !important
 button
-	cursor: pointer
+	cursor: pointer !important
 
 h2, h3, h4, h5
 	
@@ -128,7 +149,7 @@ h1
 				font-family: "HarmoniaBold"
 				font-size: em(17px)
 				background: none
-				height: auto
+				min-height: auto
 				>a
 					text-decoration: none
 					
@@ -274,6 +295,7 @@ h1
 			height: auto
 			padding-top: 0
 			margin-top: 0
+			min-height: auto
 			a
 				display: block
 				text-decoration: none
@@ -431,6 +453,30 @@ main
 	width: 100%
 	height: auto
 
+.value_items
+	margin-bottom: 50px
+
+	.item
+		span
+			display: inline-block
+			padding: 5px 50px
+			font-size: em(30px)
+			font-family: "OpenCondBold"
+			position: absolute
+			background-color: $main_color
+			color: #fdfdff
+		.top
+			left: 15px
+			top: 50px
+		.bottom
+			right: 15px
+			bottom: 100px
+			// margin-right: 15px
+		img
+			width: 100%
+			height: auto
+			border-radius: 7px
+
 
 .owl-carousel
 	margin-bottom: 20px
@@ -511,13 +557,20 @@ main
 			height: auto
 			padding: 8px 18px 8px 38px
 			border-radius: 7px
-			color: #9fa3a7
+			color: $main_color
+			// &:focus
+			// 	color: $main_color
+			+placeholder
+			  color: #9fa3a7
+
 		textarea
 			min-height: 120px
 			padding: 8px 18px 8px 19px
 			resize: none
 		// input
 		// 	min-height: 32px
+
+
 .contact_form
 	.user
 		position: relative
@@ -648,7 +701,14 @@ main
 			font-size: em(16px)
 			font-family: "OpenSans"
 			color: #595a60
-
+		p
+			max-width: 450px
+			height: auto
+			// padding: 55px 0 0
+			display: block
+			font-size: em(16px)
+			font-family: "OpenSans"
+			color: #595a60
 		form
 			button
 				margin-top: 20px
@@ -677,7 +737,7 @@ ul
 		list-style: none
 		background: url(../img/checkin.png) no-repeat 0 1px
 		background-size: 24px
-		height: 38px
+		min-height: 38px
 		padding-left: 38px
 		padding-top: 10px
 		margin-top: 10px
@@ -687,6 +747,7 @@ ul
 	width: 100%
 	height: auto
 	padding-bottom: 90px
+
 	img
 		width: 100%
 		height: auto
@@ -708,7 +769,7 @@ ul
 		font-size: em(16px)
 		font-family: "OpenSans"
 		&:hover
-			text-decoration: underline
+			
 	h3
 		text-align: left
 		font-size: em(26px)
@@ -718,6 +779,7 @@ ul
 		transition: .2s
 		&:hover
 			color: $orange
+			text-decoration: underline
 			transition: .2s
 	p
 		text-align: left
@@ -733,6 +795,39 @@ ul
 	color: $main_color
 	padding-bottom: 20px
 
+
+.wpcf7-not-valid-tip
+	position: absolute !important
+	top: 0% !important
+	left: -1% !important
+	z-index: 100 !important
+	border: 1px solid #ff0000 !important
+	background: #FE8081 !important
+	width: 101% !important
+	height: auto !important
+	padding: 11px 4px 11px 11px !important
+	-webkit-border-radius: 7px !important
+	border-radius: 7px !important
+	color: #000 !important
+	font-size: 11px !important
+	margin: -10px 2px !important
+
+.wpcf7-response-output,
+.wpcf7-display-none,
+.wpcf7-validation-errors, 
+	border: 2px solid red !important
+	border-radius: 7px !important
+	color: #fff !important
+	font-size: 12px !important
+	font-family: "OpenSans"
+	padding: 12px 14px !important
+.wpcf7-mail-sent-ok
+	border: 2px solid green !important
+	border-radius: 7px !important
+	color: #fff !important
+	font-size: 12px !important
+	font-family: "OpenSans"
+	padding: 12px 14px !important
 // home page end
 
 // aboutus page start
@@ -768,7 +863,8 @@ ul
 		line-height: em(27px)
 		color: #4a4b51
 		padding: 35px 0 45px
-
+	ul
+		padding-left: 60px
 // aboutus page end
 
 // contactus page start
@@ -1051,10 +1147,16 @@ blockquote
 		p
 			padding: 11px 0 24px
 		h1
-			margin: 0 0 40px
+			margin: 40px 0 40px
+		h3
+			font-family: "OpenSans"
+			font-size: em(17px)
+			color: $main_color
+			line-height: em(25px)
 	.skills_items
 		.item
 			form
+
 				button
 					padding: 15px 40px 10px
 
@@ -1102,17 +1204,72 @@ blockquote
 
 // businessPlan
 
+#acordion
+	width: 100%
+	height: auto
+	border-bottom: 1px solid $main_color
+	.panel-body
+		padding: 20px
+		border-top: 1px solid $main-color
+		font-size: em(16px)
+		font-family: "OpenSans"
+		color: #4a4b54
 
+.panel-title
+	position: relative
+	a
+		display: inline-block
+		padding: 7px 59px 7px 25px
+		text-align: left
+		font-size: em(19px)
+		font-family: "OpenSans"
+		text-transform: uppercase
+		border-radius: 7px
+		background-color: $orange
+		margin-bottom: 15px
+		text-decoration: none
+		color: #fff
+		position: relative
+		&:before
+			content: "\f0fe"
+			position: absolute
+			right: 20px
+			top: 50%
+			transform: translateY(-50%)
+			padding-right: 7px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
 
-
-
-
-
-
-
-
-
-
+.about_business
+	.fixed_ul
+		ul
+			li
+				min-width: 100%
+				color: #4a4b51
+				font-size: em(17px)
+		h3
+			font-size: 1.4625em
+			padding-top: 20px
+		p
+			font-size: em(17px)
+.checkin_title
+	h5
+		font-size: em(20px)
+		color: #4a4b51
+		font-family: "OpenSans"
+		background: url(../img/checkin.png) no-repeat 0 1px
+		background-size: 24px
+		height: 38px
+		padding-left: 38px
+		padding-top: 10px
+		margin-top: 10px
+		margin-left: 20px
+	.list_type_two
+		padding-top: 0px
+		ul
+			padding-left: 0px
 @import "../css/media"
 
 
