@@ -1486,28 +1486,182 @@ h5
 table
 	width: 100%
 	height: auto
-
+	margin-top: 50px
 	tr
 		width: 100%
 		height: auto
 		margin: 0 auto
-		&:first-child
+		&:nth-child(even)
+			background-color: #e2e2e4
+		
+			
+
+		th
+			color: #fff
+			font-size: em(18px)
+			font-family: "OpenSans"
+			text-align: center
 			background: $main_color
 
-			td
-				color: #fff
-				font-size: em(18px)
-				font-family: "OpenSans"
-				text-align: center
+			&:nth-child(1)
+				padding: 45px 150px
+				border-radius: 7px 0 0 0
+			&:nth-child(2)
+				padding: 45px 50px
+				border: none
+			&:nth-child(3)
+				padding: 45px 50px
+				border-radius: 0 7px 0 0
+		td
+			padding: 15px
+			&:nth-child(2)
+				border-left: 1px solid #d7d7d9
+				border-right: 1px solid #d7d7d9
 
-				&:nth-child(1)
-					padding: 45px 150px
-					border-radius: 7px 0 0 0
-				&:nth-child(2)
-					padding: 45px 50px
-				&:nth-child(3)
-					padding: 45px 50px
-					border-radius: 0 7px 0 0
+.prop
+	width: 100%
+	height: auto
+	text-align: center
+	margin-top: 70px
+	.prop_head
+		width: 100%
+		height: auto
+		padding: 25px 0
+		background-color: $main_color
+		border-radius: 5px 5px 0 0
+		transition: .6s
+		h4
+			width: 80%
+			margin: 0 auto
+			height: auto
+			border-bottom: 3px solid #fff
+			font-family: "BitterRegular"
+			font-size: em(18px)
+			padding-bottom: 25px
+			color: #fff
+		.sales
+			// width: 55%
+			height: auto
+			font-family: "LatoBlack"
+			font-size: em(18px)
+			color: $main_color
+			display: inline-block
+			padding: 12px 26px
+			margin-top: 25px
+			border-radius: 42px
+			background-color: #e2e2e4
+	.prop_main
+		width: 100%
+		height: auto
+		padding: 5px 15px
+		background-color: #e2e2e4
+		color: #3e3d3d
+		line-height: em(24px)
+
+		h1
+			position: relative
+			font-size: em(17px)
+			font-family: "OpenSans"
+			margin-bottom: 30px
+			font-weight: 300
+			&:after
+				content: ""
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -10px
+				position: absolute
+				width: 40px
+				height: 3px
+				background-color: #704361
+		p
+			font-size: em(17px)
+			font-family: "OpenSans"
+			margin-bottom: 30px
+			position: relative
+			&:after
+				content: ""
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -10px
+				position: absolute
+				width: 40px
+				height: 3px
+				background-color: #704361
+		h3
+			position: relative
+			font-size: em(17px)
+			font-family: "OpenSans"
+			margin-bottom: 20px
+			font-weight: 700
+		ol
+			margin-bottom: 25px
+			margin-left: 0
+			position: relative
+			li
+				font-size: em(17px)
+				font-family: "OpenSans"
+				line-height: em(24px)
+				text-align: center
+				margin-top: 10px
+				&:first-child
+					margin-top: 0
+			&:after
+				content: ""
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -10px
+				position: absolute
+				width: 40px
+				height: 3px
+				background-color: #704361
+	.prop_footer
+		width: 100%
+		height: auto
+		padding: 25px 0
+		background-color: $main_color
+		border-radius: 0 0 5px 5px
+		transition: .6s
+		p
+			position: relative
+			font-size: em(17px)
+			font-family: "OpenSans"
+			color: #fff
+.prop
+	transition: 1.2s
+	-webkit-transform: scale(1,1)
+    -webkit-transition-timing-function: ease-out
+    -webkit-transition-duration: 550ms
+    -moz-transform: scale(1,1)
+    -moz-transition-timing-function: ease-out
+    -moz-transition-duration: 550ms
+	&:hover
+		// zoom: 1.2
+		// margin-top: 20px
+		// margin-bottom: 0
+		// transition: 1s
+		-webkit-transform: scale(1.1,1.1)
+		-webkit-transition-timing-function: ease-out
+		-webkit-transition-duration: 550ms
+		-moz-transform: scale(1.1,1.1)
+		-moz-transition-timing-function: ease-out
+		-moz-transition-duration: 550ms
+		.prop_footer
+			background-color: $orange
+		.prop_head
+			background-color: $orange
+
+
+.woocommerce-breadcrumb
+	display: none
+
+.fixed_p
+	>p
+		margin-top: 50px
+
+
+
+
+
 
 
 
