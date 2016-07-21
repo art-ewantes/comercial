@@ -90,6 +90,7 @@ h3
 
 p
 	font-family: "OpenSans"
+	font-size: em(17px)
 
 h1
 	font-family: "OpenCondBold"
@@ -389,11 +390,47 @@ h1
 				font-family: "HarmoniaRegular"
 				line-height: 15px
 	.mnu
+		position: relative
 		nav
 			ul
 				>li
 				    margin: 39px 30px;
  
+.social_
+	position: absolute
+	display: inline-block
+	left: 50%
+	transform: translateX(-50%)
+	span
+		font-size: em(17px)
+		font-family: "OpenSansLight"
+		color: $main_color
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+	.fa
+		font-size: em(24px)
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+	.fa-facebook-square
+		color: #395d98
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+	.fa-instagram
+		color: #373737
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+	.fa-vk
+		color: #4e7093
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+
+
+
 
 .develop
 	width: 100%
@@ -416,21 +453,22 @@ h1
 			height: 23px
 			margin: 0 auto
 
-.social
-	display: inline-block
-	vertical-align: middle
-	margin-left: 20px
-	text-align: center
-	i
-		color: #395d98
-		font-size: em(25px)
+
+
+.about_business
+	ul
+		li
+			max-width: 400px
+
+
+			
 
 // footer end
 .btn-1b 
 	background-color: $orange
 	color: #f0ebf3
 	text-transform: uppercase
-	padding: 15px 30px 10px
+	padding: 11px 30px 11px
 	background-color: $orange
 	border-radius: 10px
 	letter-spacing: 2px
@@ -438,6 +476,7 @@ h1
 	font-family: "HarmoniaRegular"
 	margin: 0 auto
 	cursor: inherit
+	
 .btn-1b:hover 
 	background: transparent
 	color: #f0ebf3
@@ -465,13 +504,16 @@ main
 			position: absolute
 			background-color: $main_color
 			color: #fdfdff
+
 		.top
 			left: 15px
 			top: 50px
+			margin-right: 15px
 		.bottom
 			right: 15px
 			bottom: 100px
 			// margin-right: 15px
+			margin-left: 15px
 		img
 			width: 100%
 			height: auto
@@ -530,7 +572,7 @@ main
 				margin: -4px 5px
 
 
-.contact_form
+.contact_form 
 	height: auto
 	padding: 35px 20px
 	background-color: $main_color
@@ -706,9 +748,28 @@ main
 			height: auto
 			// padding: 55px 0 0
 			display: block
-			font-size: em(16px)
+			font-size: em(18px)
 			font-family: "OpenSans"
 			color: #595a60
+		ul
+			width: 100%
+			height: auto
+			// list-style-image: url(../img/checkin.png)
+			// list-style-position: inside
+			margin-bottom: 20px
+			li
+				max-width: 400px
+				// margin-left: 30px
+				// padding: 10px 0
+				font-size: em(18px)
+				font-family: "OpenSans"
+				list-style: none
+				background: url(../img/checkin.png) no-repeat 0 1px
+				background-size: 24px
+				min-height: 38px
+				padding-left: 38px
+				padding-top: 10px
+				margin-top: 10px		
 		form
 			button
 				margin-top: 20px
@@ -1018,7 +1079,8 @@ ul
 	.btn-1b
 		padding: 15px 55px 10px
 	.news_title
-		
+		a
+			text-decoration: none
 		h1
 			display: block
 			position: relative
@@ -1131,7 +1193,10 @@ blockquote
 		margin-top: 10px
 		&:hover
 			text-decoration: underline
-			transition: 2.9s
+			// background-color: #a896b3
+			// // transition: 2.9s
+			// color: #fff
+
 
 // blog page end
 
@@ -1159,6 +1224,37 @@ blockquote
 
 				button
 					padding: 15px 40px 10px
+
+// number list
+ol
+	list-style-type: disc
+	list-style: none
+	list-style-position: inside
+	margin-left: 60px
+	li
+		width: 100%
+		height: auto
+		text-align: left
+		line-height: em(35px)
+		font-family: "OpenSans"
+
+	li
+		font-size: em(18px)
+		
+		color: #595a60
+		background: none
+		max-width: 100%
+		list-style: inherit
+		padding: 0
+		margin: 0
+		&:before
+			font-family: 'OpenSans', sans-serif
+			font-weight: 400
+			font-size: em(20px)
+			vertical-align: middle
+			color: $main_color /* Цвет маркера */
+			content: "•"/* Маркер */
+			padding-right: 7px/* Отступ от маркера до текста */
 
 .list_type_two
 	width: 100%
@@ -1208,12 +1304,24 @@ blockquote
 	width: 100%
 	height: auto
 	border-bottom: 1px solid $main_color
+	margin-top: 30px
 	.panel-body
 		padding: 20px
 		border-top: 1px solid $main-color
 		font-size: em(16px)
 		font-family: "OpenSans"
 		color: #4a4b54
+		text-align: center
+		p
+			text-align: left
+		h1,h2,h3,h4,h5
+			text-align: left
+		img
+			width: auto
+			height: auto
+			border-radius: 7px
+			// margin: 0 auto
+
 
 .panel-title
 	position: relative
@@ -1254,22 +1362,155 @@ blockquote
 			padding-top: 20px
 		p
 			font-size: em(17px)
-.checkin_title
-	h5
-		font-size: em(20px)
-		color: #4a4b51
-		font-family: "OpenSans"
-		background: url(../img/checkin.png) no-repeat 0 1px
-		background-size: 24px
-		height: 38px
-		padding-left: 38px
-		padding-top: 10px
-		margin-top: 10px
-		margin-left: 20px
-	.list_type_two
-		padding-top: 0px
-		ul
-			padding-left: 0px
+
+.about_
+	ul
+		li
+			min-width: 100%
+			color: #4a4b51
+			font-size: em(17px)
+	h3
+		font-size: 1.4625em
+		padding-top: 20px
+		color: $main_color
+
+.contact_page
+	.grupe
+		display: block
+	.user
+		position: relative
+		display: block			
+
+		&:after
+			content: "\f007"
+			padding-right: 7px
+			padding-left: 20px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #9fa3a7
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+		input
+			padding: 10px 18px 10px 38px
+
+.contact_page
+	.email
+		position: relative
+		display: block	
+		&:after
+			content: "\f0e0"
+			padding-right: 7px
+			padding-left: 20px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #9fa3a7
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+		input
+			padding: 10px 18px 10px 38px
+.contact_page
+	.phone
+		position: relative
+		display: block
+		&:after
+			content: "\f10b"
+			padding-right: 7px
+			padding-left: 20px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #9fa3a7
+			top: 50%
+			left: 0
+			transform: translateY(-50%)	
+			font-size: em(22px)		
+			margin-left: 3px
+		input
+			padding: 10px 18px 10px 38px
+
+.row_contact
+	.contact_page_sub
+		.group
+			display: block
+			textarea
+				min-height: 150px
+		.btn-1b
+			padding: 15px 30px 10px
+			display: block
+			text-align: center
+			border: $main_color
+			cursor: pointer
+			&:hover
+				color: $main_color
+				background: #f0ebf3	
+			&:after
+				background: transparent !important
+.row_contact
+	background: $main_color
+	padding-bottom: 20px
+	margin-top: 50px
+	.about
+		h1
+			display: block
+			text-align: center
+			color: #fff
+			&:after
+				background-color: #fff
+		p
+			color: #fff
+
+
+
+h5
+	font-size: em(20px)
+	color: #4a4b51
+	font-family: "OpenSans"
+	background: url(../img/checkin.png) no-repeat 0 1px
+	background-size: 24px
+	height: 38px
+	padding-left: 38px
+	padding-top: 10px
+	margin-top: 10px
+	margin-left: 20px
+
+table
+	width: 100%
+	height: auto
+
+	tr
+		width: 100%
+		height: auto
+		margin: 0 auto
+		&:first-child
+			background: $main_color
+
+			td
+				color: #fff
+				font-size: em(18px)
+				font-family: "OpenSans"
+				text-align: center
+
+				&:nth-child(1)
+					padding: 45px 150px
+					border-radius: 7px 0 0 0
+				&:nth-child(2)
+					padding: 45px 50px
+				&:nth-child(3)
+					padding: 45px 50px
+					border-radius: 0 7px 0 0
+
+
+
 @import "../css/media"
 
 
