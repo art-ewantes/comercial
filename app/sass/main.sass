@@ -394,7 +394,7 @@ h1
 		nav
 			ul
 				>li
-				    margin: 39px 30px;
+				    margin: 39px 14px;
  
 .social_
 	position: absolute
@@ -1185,12 +1185,14 @@ blockquote
 	overflow: hidden
 	a
 		display: inline-block
-		padding: 5px 10px
+		padding: 3px 9px
 		border: 2px solid $main_color
 		cursor: inherit
 		font-size: em(13px)
 		color: #626262
-		margin-top: 10px
+		margin-top: 5px
+		margin-left: 5px
+		margin-right: 5px
 		&:hover
 			text-decoration: underline
 			// background-color: #a896b3
@@ -1659,11 +1661,38 @@ table
 		margin-top: 50px
 
 
+.pager
+	width: 100%
+	height: auto
+	margin-top: 0
+	font-size: em(16px)
+	text-align: center
+	float: none
+	margin-bottom: 40px
+	padding: 0 40px
+	.prev
+		display: none
+	.next
+		display: none
+	.current
+		background-color: $main_color !important
+		color: #fff !important
+		border: 1px solid $main_color !important
+	.page-numbers
+		background-color: transparent
+		border: 1px solid transparent
+		margin-right: 30px
+		color: $main_color
 
-
-
-
-
+	.dots
+		background-color: transparent
+		border: 1px solid transparent
+		color: $main_color
+	a.page-numbers
+		&:hover
+			background-color: transparent
+			text-transform: none
+			color: inherit
 
 @import "../css/media"
 

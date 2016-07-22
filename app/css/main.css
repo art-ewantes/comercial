@@ -318,7 +318,7 @@ h1 {
   .main_footer .mnu {
     position: relative; }
     .main_footer .mnu nav ul > li {
-      margin: 39px 30px; }
+      margin: 39px 14px; }
 
 .social_ {
   position: absolute;
@@ -1043,12 +1043,14 @@ blockquote {
   overflow: hidden; }
   .tags a {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 3px 9px;
     border: 2px solid #604b6c;
     cursor: inherit;
     font-size: 0.8125em;
     color: #626262;
-    margin-top: 10px; }
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px; }
     .tags a:hover {
       text-decoration: underline; }
 
@@ -1495,6 +1497,37 @@ table {
 .fixed_p > p {
   margin-top: 50px; }
 
+.pager {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  font-size: 1em;
+  text-align: center;
+  float: none;
+  margin-bottom: 40px;
+  padding: 0 40px; }
+  .pager .prev {
+    display: none; }
+  .pager .next {
+    display: none; }
+  .pager .current {
+    background-color: #604b6c !important;
+    color: #fff !important;
+    border: 1px solid #604b6c !important; }
+  .pager .page-numbers {
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 30px;
+    color: #604b6c; }
+  .pager .dots {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #604b6c; }
+  .pager a.page-numbers:hover {
+    background-color: transparent;
+    text-transform: none;
+    color: inherit; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -1505,7 +1538,7 @@ table {
   .main_footer .comp {
     width: 44%; }
   .main_footer .mnu nav ul > li {
-    margin: 48px 20px; }
+    margin: 48px 14px; }
   .mnu_bottom ul li {
     font-size: 0.95em; } }
 
