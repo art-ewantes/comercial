@@ -69,6 +69,9 @@
 #toggle_mnu{
 	display: inline-block;
 }
+.social__{
+	display: block;
+}
 .mnu{
 	text-align: right;
 	min-height: 60px;
@@ -161,7 +164,9 @@
 	.blog_item .news_title h1{
 		font-size: 1.575em;
 	}
-	
+	.pager .page-numbers{
+	    margin-right: 15px;
+	}
 
 }
 
