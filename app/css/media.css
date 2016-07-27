@@ -57,6 +57,24 @@
 	.contact_form{
 		max-width: 100%;
 	}
+	.product{
+		padding-left: 0;
+	}
+	.product_h{
+		text-align: center;
+		padding-top: 20px;
+	}
+	
+	.product_m ul li{
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	.product_m .prices{
+		text-align: center;
+	}
+	.product_f{
+		text-align: center;
+	}
 }
 
 
@@ -189,9 +207,37 @@
 .owl-carousel .item span{
 	font-size: 1.5125em;
 }
+
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+.product img{
+	max-width: 100%;
+	height: auto;
+}
+.product_ h1{
+	font-size: 1.3875em;
+}
+.product_m{
+	padding-left: 0;
+}
+.product_h{
+	text-align: left;
+	padding-left: 0;
+}
+.product_h h2{
+	font-size: 1em;
+}
+.product_f form button{
+	margin-right: 0;
+}
+.product_m ul li{
+	font-size: 1em;
+}
+.product_h a{
+	margin-bottom: 20px
+}
+
 
 .mnu{
 	width: 100%;

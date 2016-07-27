@@ -511,6 +511,7 @@ h1
 	font-size: em(13px)
 	font-family: "HarmoniaRegular"
 	margin: 0 auto
+	overflow: hidden
 	cursor: inherit
 	
 .btn-1b:hover 
@@ -1413,6 +1414,8 @@ ol
 			font-weight: normal
 			text-decoration: inherit
 
+		
+
 .about_business
 	.fixed_ul
 		ul
@@ -1721,7 +1724,36 @@ table
 	>p
 		margin-top: 50px
 
-
+.order
+	width: 100%
+	height: auto
+	text-align: center
+	margin-top: 20px
+	margin-bottom: 200px
+	.fa-check-circle
+		display: inline-block
+		font-size: em(95px)
+		color: $main_color
+	p
+		width: inline-block
+		font-size: em(30px)
+		font-family: "BitterRegular"
+		color: #5a585c
+		// margin-top: 20px
+		padding-top: 20px
+		max-width: 450px
+		margin: 0 auto
+		line-height: em(18px)
+	.btn-1b
+		text-transform: uppercase
+		padding: 13px 30px 11px
+		border-radius: 19px
+		margin-top: 20px
+		font-family: "OpenSansLight"
+		letter-spacing: 1px
+		font-weight: 300
+		font-size: em(18px)
+		box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.75)
 .pager
 	width: 100%
 	height: auto
@@ -1754,6 +1786,217 @@ table
 			background-color: transparent
 			text-transform: none
 			color: inherit
+
+.product_
+	margin-top: 45px
+	margin-bottom: 45px
+	h1
+		margin: 0 auto
+		display: block
+		max-width: 600px
+		text-align: center
+	p
+		padding: 35px 0 10px
+.product
+	width: 100%
+	min-height: 500px
+	background-color: #f2f2f2
+	border: 1px solid #c2c2c2
+	padding-top: 45px
+	padding-left: 35px
+	padding-bottom: 60px
+	img
+		display: block
+		max-width: 400px
+		height: 315px
+		margin: 0 auto
+.download
+	max-width: 300px
+	height: auto
+	margin: 0 auto
+	text-align: center
+	.left
+		display: inline-block
+		vertical-align: middle
+		img
+			width: auto
+			height: auto
+			display: inline-block
+			vertical-align: middle
+
+.right
+	display: inline-block
+	vertical-align: middle
+	padding: 35px
+	.file
+		display: block
+		text-align: center
+		p
+			display: inline-block
+			vertical-align: middle
+			color: #6e6a6a
+			font-family: "OpenSans"
+			font-size: em(16px)
+		
+		.fa
+			display: inline-block
+			vertical-align: middle
+			font-size: em(19px)
+			color: #6e6a6a
+			margin-left: 5px
+			-webkit-transform: scale(1,1)
+			-webkit-transition-timing-function: ease-out
+			-webkit-transition-duration: 550ms
+			-moz-transform: scale(1,1)
+			-moz-transition-timing-function: ease-out
+			-moz-transition-duration: 550ms
+			&:hover
+				color: $main_color
+				-webkit-transform: scale(1.5,1.5)
+				-webkit-transition-timing-function: ease-out
+				-webkit-transition-duration: 550ms
+				-moz-transform: scale(1.5,1.5)
+				-moz-transition-timing-function: ease-out
+				-moz-transition-duration: 550ms
+
+.product_h
+	width: 100%
+	height: auto
+	border-bottom: 1px solid #d4d4d4
+	padding-bottom: 30px
+	padding-left: 60px
+	
+	a + a 
+		margin-right: 10px		
+	a
+		display: inline-block
+		float: right
+		width: 30px
+		height: 30px
+		border: 1px solid black
+		background: transparent
+		transition: .4s
+		outline: none
+		text-decoration: none
+		&:hover
+			background: $main_color
+			border: 1px solid $main_color
+			transition: .4s
+			text-decoration: none
+
+
+	.list-product_left
+		position: relative
+		&:after
+			content: "\f053"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #000
+			margin-left: 8px
+			top: 52%
+			left: 0
+			transform: translateY(-52%)
+		&:hover
+			&:after
+				color: #fff
+	.list-product_right
+		position: relative
+		&:after
+			content: "\f054"
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			margin-right: 8px
+			color: #000
+			top: 52%
+			right: 0
+			transform: translateY(-52%)	
+		&:hover
+			&:after
+				color: #fff
+
+	h2
+		display: inline-block
+		font-size: em(22px)
+		font-family: "BitterRegular"
+		text-transform: uppercase
+		color: $main_color
+.product_m
+	width: 100%
+	height: auto
+	padding-top: 25px
+	padding-bottom: 45px
+	padding-left: 30px
+	.prices
+		p
+			display: inline-block
+		p:first-child
+			color: #828282
+			font-weight: bold
+			font-size: em(25px)
+			font-family: "OpenSans"
+			margin-right: 15px
+			margin-left: 15px
+		p:nth-child(2)
+			font-size: em(30px)
+			font-family: "OpenSansLight"
+			color: #fff
+			padding: 10px 25px
+			background-color: $main_color
+			letter-spacing: 0px
+	ul
+		margin-top: 30px
+		li
+			color: #6e6a6a
+			font-family: "OpenSans"
+			font-size: em(18px)
+			max-width: 100%
+			height: auto
+.product_f
+	form
+		display: inline-block
+		max-width: 400px
+		vertical-align: middle
+		button
+			margin-right: 20px
+	.product_buy
+		&:before
+			content: "\f07a"
+			padding-right: 7px
+			padding-left: 38px
+			font-family: FontAwesome
+			font-style: normal
+			font-weight: normal
+			text-decoration: inherit
+			position: absolute
+			color: #fff
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+	.btn-1b
+		text-transform: uppercase
+		padding: 13px 60px 11px
+		border-radius: 19px
+		margin-top: 20px
+		font-family: "OpenSansLight"
+		letter-spacing: 1px
+		font-weight: 300
+		font-size: em(18px)
+		box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.75)
+		z-index: 2
+		border: none
+
+	.product_develop
+		background: #604b6c
+		&:after
+			background: $orange
+	.product_buy
+		padding: 13px 60px 11px 70px
 
 // .contact_
 // 	.wpcf7
