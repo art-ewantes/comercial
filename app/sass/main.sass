@@ -726,7 +726,7 @@ main
 .contact_form
 	form
 		.btn-1b
-			padding: 15px 30px 10px
+			padding: 10px 30px 10px
 			display: block
 			text-align: center
 			border: $main_color
@@ -813,15 +813,6 @@ main
 			button
 				margin-top: 20px
 
-				// text-transform: uppercase
-				// padding: 15px 30px
-				// background-color: $orange
-				// border-radius: 10px
-				// letter-spacing: 2px
-				// font-size: em(13px)
-				// font-family: "HarmoniaRegular"
-				// margin: 0 auto
-				// cursor: inherit
 ul
 	width: 100%
 	height: auto
@@ -1112,7 +1103,7 @@ ul
 	.btn
 		float: right
 		margin-top: 20px
-		padding: 15px 39px 10px
+		padding: 10px 39px 10px
 		letter-spacing: 3px
 
 // contactus page end
@@ -1139,7 +1130,7 @@ ul
 		font-family: "OpenSans"
 		color: #626262
 	.btn-1b
-		padding: 15px 55px 10px
+		padding: 10px 55px 10px
 	.news_title
 		a
 			text-decoration: none
@@ -1287,7 +1278,7 @@ blockquote
 			form
 
 				button
-					padding: 15px 40px 10px
+					padding: 10px 40px 10px
 
 // number list
 ol
@@ -1511,7 +1502,7 @@ ol
 			textarea
 				min-height: 150px
 		.btn-1b
-			padding: 15px 30px 10px
+			padding: 10px 30px 10px
 			display: block
 			text-align: center
 			border: $main_color
@@ -1998,40 +1989,384 @@ table
 	.product_buy
 		padding: 13px 60px 11px 70px
 
-// .contact_
-// 	.wpcf7
-// 		.wpcf7-not-valid-tip
-// 			position: absolute !important
-// 			top: 0% !important
-// 			left: -1% !important
-// 			z-index: 100 !important
-// 			border: 1px solid #ff0000 !important
-// 			background: #FE8081 !important
-// 			width: 101% !important
-// 			height: auto !important
-// 			padding: 11px 4px 11px 11px !important
-// 			-webkit-border-radius: 7px !important
-// 			border-radius: 7px !important
-// 			color: #000 !important
-// 			font-size: 11px !important
-// 			margin: -10px 2px !important
+.accept_order
+	width: 100%
+	height: auto
+	padding: 30px 90px
+	background-color: #e6e1e5
+	margin-top: 50px
+	h1
+		position: relative
+		display: block
+		margin: 0 auto 30px
+		font-size: em(25px)
+		font-family: "OpenSans"
+		font-weight: 700
+		// color: #85778d
+		color: $main_color
+		text-align: center
+		&:after
+			content: ""
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -10px
+			position: absolute
+			width: 40px
+			height: 3px
+			background-color: $orange
+	.contact_page,
+	.contact_page_sub
+		width: 100%
+		height: auto
+		.group
+			display: block
+			position: relative
+			span
+				font-family: "OpenSans"
+				font-size: em(16px)
+				color: $main_color
+				padding-left: 10px
 
-// 		.wpcf7-response-output,
-// 		.wpcf7-display-none,
-// 		.wpcf7-validation-errors, 
-// 			border: 2px solid red !important
-// 			border-radius: 7px !important
-// 			color: #fff !important
-// 			font-size: 12px !important
-// 			font-family: "OpenSans"
-// 			padding: 12px 14px !important
-// 		.wpcf7-mail-sent-ok
-// 			border: 2px solid green !important
-// 			border-radius: 7px !important
-// 			color: #fff !important
-// 			font-size: 12px !important
-// 			font-family: "OpenSans"
-// 			padding: 12px 14px !important		
+		input,
+		textarea,
+		select
+			display: block
+			width: 100%
+			font-size: em(13px)
+			font-family: "OpenSans"
+			padding: 12px 16px
+			margin-top: 5px
+			margin-bottom: 5px
+			border-radius: 7px
+			border: 1px solid #dedede
+			background-color: #f6f6f6
+			color: #9fa3a7
+
+		textarea
+			min-height: 100px
+			resize: none
+		
+.marg_fix
+	margin-bottom: 50px
+
+
+.checkbox
+	position: relative
+	display: block
+	margin-top: 45px
+	margin-bottom: 10px
+	label
+		display: inline-block
+		max-width: 100%
+		min-height: 20px
+		padding-left: 25px
+		margin-bottom: 0
+		font-weight: 400
+		cursor: pointer
+		color: $main_color
+		font-family: "OpenSans"
+.checkbox input[type=checkbox]
+	display: none
+// 	position: absolute
+// 	margin-left: -20px
+// 	background-image: url(../img/checkbox.png)
+// 	background-color: $orange
+.checkbox + .checkbox
+	margin-bottom: 30px
+	margin-top: 10px
+.checkbox
+	margin-left: 50px
+	label
+		
+		&:before
+			content: ""
+			display: inline-block
+			width: 20px
+			height: 20px
+			border: 1px solid #e4e8f0
+			margin-right: 15px
+			position: absolute
+			left: 0
+			bottom: 1px
+			background-color: #fff
+			border-radius: 5px
+			// box-shadow: inset 0 2px 3px 0 rgba(0,0,0,.3), 0 1px 0 0 rgba(255,255,255,.8) 
+
+
+input[type=checkbox]:checked +	label:before
+	content: "\f00c"
+	font-family: FontAwesome
+    font-style: normal
+    font-weight: normal
+    text-decoration: inherit
+	color: #fff
+	font-size: em(13px)
+	line-height: 18px
+	text-align: center
+	// line-height: 17px
+	background-color: $orange
+	z-index: 10000
+
+.checkbox:last-child
+	margin-top: 10px
+	margin-left: 0
+	
+.contact_page_sub
+	.btn
+		float: right
+		margin-top: 20px
+		padding: 10px 39px 10px
+		letter-spacing: 3px
+
+.order_link
+	h6
+		font-size: em(18px)
+		font-family: "OpenSans"
+		color: $orange
+		text-align: center
+
+	h2
+		font-size: em(22px)
+		font-family: "BitterRegular"
+		color: $main_color
+		font-weight: 300
+		text-transform: uppercase
+		text-align: center
+		margin-top: 25px
+	h2 + h2
+		margin-top: 40px
+
+.prices_products
+	h6
+		text-align: left
+		margin-left: 15px
+	>p
+		font-family: "OpenSansLight"
+		font-size: em(22px)
+		color: $main_color
+		margin-top: 25px
+		font-weight: 300
+	p + p
+		margin-top: 40px
+	.all_price
+		margin-top: 40px
+		span 
+			display: inline-block
+			vertical-align: middle
+			font-size: em(24px)
+			font-family: "OpenSans"
+			margin-right: 15px
+			color: $orange
+			position: absolute
+			left: -60px
+		p 
+			display: inline-block
+			vertical-align: middle
+			font-size: em(26px)
+			font-family: "OpenSansLight"
+			color: $main_color
+			font-weight: 300
+
+
+.product_main
+	width: 100%
+	height: auto
+	.product_main_row
+		width: 100%
+		height: auto
+		.top_line
+			width: 100%
+			padding: 5px 10px
+			margin-bottom: 20px
+			background-color: $main_color
+			text-align: right
+			max-height: 45px
+			.group
+				position: relative
+				input
+					min-width: 260px
+					color: #9fa3a7
+					font-family: "OpenSans"
+					padding: 6px 15px
+					border-radius: 6px
+					position: relative
+					border: 1px solid #666
+					+placeholder
+						color: #9fa3a7
+				a
+					width: 20px
+					height: 20px
+					position: absolute
+					display: inline-block
+					right: 10px
+					top: 0
+					vertical-align: middle
+					.fa
+						color: $main_color
+						font-size: em(20px)
+						line-height: 20px
+						display: inline-block
+						vertical-align: middle
+
+
+
+
+.filter_title
+	width: 100%
+	height: auto
+	max-height: 45px
+	padding: 9px 90px
+	background-color: $main_color
+	h6
+		display: inline-block
+		font-size: em(20px)
+		font-family: "BitterRegular"
+		font-weight: 700
+		color: #fff
+
+
+.row_item_shop
+	width: 100%
+	height: auto
+	background-color: transparent
+	padding: 0
+	.fix_padding_i
+		padding: 0 8px
+		margin: 0
+	.item_shop
+		min-height: 400px
+		height: auto
+		width: 100%
+		display: inline-block
+		background-color: #f2f2f2
+		padding: 18px
+		border-radius: 8px
+		margin-bottom: 15px
+		.item_shop_header
+			text-align: center
+			img
+				width: 100%
+				height: 165px
+		.item_shop_main
+			margin: 15px 0
+			text-align: center
+			span
+				width: 100px
+				font-size: em(15px)
+				color: $main_color
+				font-family: "BitterRegular"
+				display: inline-block
+				vertical-align: middle
+			span + span
+				font-family: "OpenSansLight"
+				color: #140f13
+				font-size: em(20px)
+				display: inline-block
+				vertical-align: middle
+
+		.item_shop_footer
+			span
+				font-size: em(15px)
+				color: #6e6a6a
+				font-family: "OpenSans"
+				display: block
+				font-weight: 300
+				strong
+					font-weight: 700
+
+
+
+
+		.btn-1b
+			text-transform: uppercase
+			padding: 10px 15px 10px
+			border-radius: 9px
+			letter-spacing: 3px
+			margin-top: 20px
+			font-family: "OpenSansLight"
+			letter-spacing: 1px
+			font-weight: 300
+			font-size: em(12px)
+			box-shadow: inset 0px -1px 1px 0px rgba(0, 0, 0, 0.75)
+			z-index: 2
+			border: none
+
+.row_filter
+	width: 100%
+	height: auto
+	padding: 0 15px
+	h4
+		font-size: em(16px)
+		font-family: "OpenSans"
+		text-transform: uppercase
+		color: $main_color
+		margin: 20px 0
+	.checkbox
+		margin-left: 0
+		margin-top: 10px
+		margin-bottom: 12px
+		label
+			color: #434144
+			font-size: em(13px)
+			span
+				color: $orange
+
+.partners
+	width: 100%
+	height: auto
+	margin-top: 30px
+	padding: 50px
+	text-align: left
+	.partners_item
+		position: relative
+		margin-top: 30px
+		img
+			width: 295px
+			// height: 130px
+			height: auto
+		.overlay
+			position: absolute
+			top: -50px
+			left: 0
+			max-width: 300px
+			height: auto
+			background-color: rgba(96, 75, 108, 1);
+			text-align: left
+			padding: 10px 10px
+			opacity: 0
+			-webkit-transition: all 0.6s
+			transition: all 0.6s
+			padding-top: -20px
+			&:hover
+				padding-top: 20px
+				opacity: 1
+		.overlay
+			p
+				font-size: em(14px)
+				color: #fff
+				font-family: "OpenSans"
+			h1
+				font-size: em(18px)
+				font-family: "BitterRegular"
+				color: #fff
+				position: relative
+				display: inline-block
+				margin-left: 5px
+				padding-bottom: 5px
+				&:after
+					content: ""
+					position: absolute
+					width: 30px
+					height: 3px
+					background-color: $orange
+					bottom: 0
+					left: 50%
+					transform: translateX(-50%)
+					display: inline-block
+
+
+
+
 
 @import "../css/media"
 

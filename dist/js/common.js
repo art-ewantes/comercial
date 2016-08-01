@@ -10,8 +10,6 @@ $(document).ready(function() {
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
 	    margin:10,
-	    // nav:true,
-	    
 	    autoplayTimeout: 4000,
 	    autoplaySpeed:1400,
 	    pagination:true,
